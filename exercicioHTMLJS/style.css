@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+form input, button, label {
+    margin-top: 5px;
+    padding: 10px;
+}
+
+form button{
+    margin-top: 35px;
+}
+
+#mensagemAviso {
+    margin-top: 10px;
+}
