@@ -1,20 +1,15 @@
 $(document).ready(function(){
-    $("form").submit(function(e){
+    const form = $('form');
+
+    $(form).submit(function(e){
         e.preventDefault();
 
         const valor = $("input").val();
 
         $("ul").append(`<li>${valor}</li>`);
-
-        $("li").click(function(){
-            $(this).toggleClass('lineThrough');
-        });
-        /* $("li").click(function(){
-            if ($(this).hasClass('lineThrough')) {
-                $(this).removeClass('lineThrough');
-            } else {
-                $(this).addClass('lineThrough');
-            }
-        }); */
+    });
+    
+    $('ul').on('click', 'li', function() {
+        $(this).toggleClass('lineThrough');
     });
 });
